@@ -1,0 +1,66 @@
+
+		.services-container {
+			max-width: 600px;
+			margin: 0 auto;
+			color: #e0e2db;
+			background: url(
+https://media.geeksforgeeks.org/wp-content/uploads/20201113113041/paintorder1.png);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		.service-item {
+			overflow: hidden;
+			position: relative;
+			padding: 80px;
+		}
+
+		.service-item-black {
+			background: linear-gradient(
+				rgba(0, 0, 0, 0.7),
+				rgba(0, 0, 0, 0.7)
+			);
+		}
+
+		.front-text {
+			text-align: center;
+			transition: transform 2s;
+		}
+
+		.back-text {
+			position: absolute;
+			bottom: -15em;
+			width: 75%;
+			margin: 0 auto;
+			height: 100%;
+			transition: bottom 2s;
+			padding: 15px 0;
+		}
+
+		.back-text h1 {
+			margin-bottom: 20px;
+		}
+
+		.back-text button {
+			margin-top: 20px;
+			padding: 10px 20px;
+			background: transparent;
+			border: 2px solid #30804b;
+			font-size: 20px;
+			color: #30804b;
+		}
+
+		.back-text button:hover {
+			background-color: #30804b;
+			color: #191716;
+		}
+
+		.service-item:hover .front-text {
+			transform: translateY(-200px);
+		}
+
+		.service-item:hover .back-text {
+			bottom: 0;
+		}
+	
